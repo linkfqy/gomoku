@@ -27,34 +27,6 @@ const drawer = ref(false) // 控制个人信息抽屉的显示
     <el-menu class="menu" mode="horizontal" :unique-opened="true" :ellipsis="false" :router="true">
         <div style="flex-grow: 1;"></div>
 
-        <!-- 游戏界面按钮 -->
-        <el-menu-item index="/main/game">
-            <span style="font-size: 20px;">
-                <el-icon size="25px">
-                    <TrophyBase />
-                </el-icon>
-            </span>
-        </el-menu-item>
-
-        <!-- 好友界面按钮 -->
-        <el-menu-item index="/main/friend">
-            <span style="font-size: 20px;">
-                <el-icon style="position: relative;" size="25px">
-                    <div class="unreadRedPoint" v-show="showingFrienderStore.unreadMessageObj.totalCount != 0"></div>
-                    <ChatDotRound />
-                </el-icon>
-            </span>
-        </el-menu-item>
-
-        <!-- 反馈界面按钮 -->
-        <el-menu-item index="/main/feedback">
-            <span style="font-size: 20px;">
-                <el-icon size="25px">
-                    <EditPen />
-                </el-icon>
-            </span>
-        </el-menu-item>
-
         <!-- 个人信息按钮 -->
         <el-menu-item>
             <span style="padding: 5px; border-radius: 5px;">

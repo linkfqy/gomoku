@@ -78,38 +78,6 @@ const lv = (level) => {
     <div>
         <!-- 按钮 -->
         <div style="display: flex; justify-content: space-between; padding: 0 60px;">
-            <el-button class="button" round @click="selectDifficultyDialogVisible = true">
-                <el-image src="/img/robot.png"></el-image>
-                <div style="font-size: 20px;">人机对战</div>
-            </el-button>
-
-            <!-- 选择难度对话框 -->
-            <el-dialog ref="difficultyDialog" v-model="selectDifficultyDialogVisible" width="30%" center>
-                <template #title>
-                    <span style="font-size: 30px;">人机对战</span>
-                </template>
-
-                <span style="text-align: center;">
-                    <div style="font-size: 30px;">{{ difficultyTitle }}</div>
-                    <div style="display: flex; justify-content: space-around; padding: 30px 50px;">
-                        <el-button style="width: 150px;" size="large" @click="difficulty = 1">简单</el-button>
-                        <el-button style="width: 150px;" size="large" type="warning" @click="difficulty = 2">普通</el-button>
-                        <el-button style="width: 150px;" size="large" type="danger" @click="difficulty = 3">困难</el-button>
-                    </div>
-                    <div style="text-align: center; margin-right: 10px;">
-                        <el-image style="width: 100px; height: 100px" :src="imgUrl" />
-                    </div>
-
-                </span>
-                <template #footer>
-                    <span>
-                        <el-button size="large" @click="selectDifficultyDialogVisible = false">取消</el-button>
-                        <el-button type="primary" size="large" @click="confirmDifficulty">
-                            确定
-                        </el-button>
-                    </span>
-                </template>
-            </el-dialog>
 
             <!-- 联机对战 -->
             <el-button class="button" round @click="router.push('/boardFriend')">

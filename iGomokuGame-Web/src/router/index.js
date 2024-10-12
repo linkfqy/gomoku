@@ -14,10 +14,6 @@ const router = createRouter({
       meta: { requireAuth: false } // 进入该界面不需要权限
     },
     {
-      path: '/boardAI',
-      component: () => import('@/views/BoardAIWindow.vue')
-    },
-    {
       path: '/boardFriend',
       component: () => import('@/views/BoardFriendWindow.vue')
     },
@@ -32,61 +28,6 @@ const router = createRouter({
         {
           path: 'game',
           component: () => import('@/views/GameWindow.vue')
-        },
-        {
-          path: 'friend',
-          component: () => import('@/views/FriendWindow.vue')
-        },
-        {
-          path: 'feedback',
-          component: () => import('@/views/FeedbackWindow.vue')
-        }
-      ]
-    },
-    // 下面是管理员模块路由配置
-    {
-      path: '/admin',
-      redirect: '/admin/login',
-      component: () => import('@/views/admin/AdminLogin.vue'),
-      meta: { requireAuth: false } // 进入该界面不需要权限
-    },
-    {
-      path: '/admin/login',
-      component: () => import('@/views/admin/AdminLogin.vue'),
-      meta: { requireAuth: false } // 进入该界面不需要权限
-    },
-    {
-      path: '/dashboard/bigscreen',
-      component: () => import('@/views/admin/BigScreen.vue')
-    },
-    {
-      path: '/dashboard',
-      redirect: '/dashboard/index',
-      component: () => import('@/views/admin/LayOut.vue'),
-      children: [
-        {
-          path: 'index',
-          component: () => import('@/views/admin/AdminIndex.vue')
-        },
-        {
-          path: 'management/feedback',
-          component: () => import('@/views/admin/management/FeedbackManagement.vue')
-        },
-        {
-          path: 'management/user',
-          component: () => import('@/views/admin/management/UserManagement.vue')
-        },
-        {
-          path: 'analysis/game',
-          component: () => import('@/views/admin/analysis/GameAnalysis.vue')
-        },
-        {
-          path: 'analysis/website',
-          component: () => import('@/views/admin/analysis/WebsiteAnalysis.vue')
-        },
-        {
-          path: 'website/monitor',
-          component: () => import('@/views/admin/WebsiteMonitor.vue')
         }
       ]
     },
