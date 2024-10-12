@@ -696,9 +696,9 @@ const onOut = () => {
 }
 
 .verification-input {
-  width: 54px;
-  height: 54px;
-  margin-right: 30px;
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
   text-align: center;
   font-size: 20px;
   border: 1px solid #ebebeb;
