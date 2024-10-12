@@ -7,8 +7,6 @@ import java.io.Serializable;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 20:53
  * @description: 返回的封装结果类
  **/
 @Data

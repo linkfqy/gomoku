@@ -10,8 +10,6 @@ import java.io.IOException;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-14 12:23
  * @description: 在线五子棋存储用户信息的实体类
  **/
 @Data

@@ -10,8 +10,6 @@ import java.util.Map;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-12 16:05
  * @description: 棋盘计算类——AI实际工作的部分
  **/
 @Slf4j
@@ -423,9 +421,7 @@ public class CalChessBoard {
      * @param y      要评估的点的y坐标
      * @param player 要评估的点的棋子颜色（黑白）
      * @return int
-     * @author AlbertZhang
      * @description 根据棋局局势返回一个点的所有得分
-     * @date 2023-12-25 17:07
      **/
     private static int evaluatePosition(Byte[][] board, int x, int y, byte player) {
         int positionScore = 0;
@@ -445,9 +441,7 @@ public class CalChessBoard {
      * @param deltaY 标识每次评估x的偏移量
      * @param player 当前评估的坐标的棋子的颜色
      * @return int  棋局的得分
-     * @author AlbertZhang
      * @description 根据棋盘局势返回当前点一个方向的得分
-     * @date 2023-12-25 17:04
      **/
     private static int checkLine(Byte[][] board, int x, int y, int deltaX, int deltaY, byte player) {
         int count = 1;  // 记录连在一起的棋子数目

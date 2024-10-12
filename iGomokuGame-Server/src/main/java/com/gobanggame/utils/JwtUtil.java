@@ -6,8 +6,6 @@ import java.util.Map;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 22:25
  * @description: 生成jwt令牌和解析jwt的工具类
  **/
 import io.jsonwebtoken.Claims;

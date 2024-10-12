@@ -4,8 +4,6 @@ import com.gobanggame.constant.UserLevelConstant;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-13 21:44
  * @description: 用于操作用户的等级，根据不同的用户分数把用户映射到不同的等级上
  **/
 public class UserLevelUtil {

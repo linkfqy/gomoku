@@ -17,8 +17,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-19 23:26
  * @description: 测试根据ip查询地域
  **/
 public class IpTest {

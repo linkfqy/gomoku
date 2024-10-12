@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-10 21:39
  * @description: 添加好友DTO
  **/
 @Data

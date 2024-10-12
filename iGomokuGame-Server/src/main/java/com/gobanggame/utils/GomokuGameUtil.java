@@ -2,8 +2,6 @@ package com.gobanggame.utils;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-14 15:04
  * @description: 判断当前棋局状态的选项
  **/
 public class GomokuGameUtil {
@@ -11,9 +9,7 @@ public class GomokuGameUtil {
     /**
      * @param chessBoard
      * @return int
-     * @author AlbertZhang
      * @description 判断游戏是否结束
-     * @date 2023-12-25 18:44
      **/
     public static int isGameOver(Integer[][] chessBoard) {
         if (chessBoard == null) {
@@ -49,9 +45,7 @@ public class GomokuGameUtil {
      * @param deltaY     标识每次评估x的偏移量
      * @param player     当前评估的坐标的棋子的颜色
      * @return boolean
-     * @author AlbertZhang
      * @description 检查每个方向
-     * @date 2023-12-25 18:45
      **/
     private static boolean checkDirection(Integer[][] chessBoard, int x, int y, int deltaX, int deltaY, Integer player) {
         int count = 1;

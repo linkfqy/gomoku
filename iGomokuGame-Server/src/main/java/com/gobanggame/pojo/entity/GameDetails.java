@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-12 14-33
  * @description: GameDetails表实体类
  **/
 @Data

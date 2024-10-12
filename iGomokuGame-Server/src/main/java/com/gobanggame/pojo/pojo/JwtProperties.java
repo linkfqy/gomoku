@@ -6,8 +6,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 22:39
  * @description: jwt属性类
  **/
 @Component

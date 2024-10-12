@@ -33,8 +33,6 @@ import java.util.Objects;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 21:24
  * @description: 用户service实现类
  **/
 @Service
@@ -57,9 +55,7 @@ public class UserServiceImpl implements UserService {
     /**
      * @param userRegisterDTO
      * @return void
-     * @author AlbertZhang
      * @description 用户注册
-     * @date 2023-12-09 21:25
      **/
     @Override
     @Transactional
@@ -93,9 +89,7 @@ public class UserServiceImpl implements UserService {
     /**
      * @param userLoginDTO
      * @return com.gobanggame.pojo.vo.UserLoginVO
-     * @author AlbertZhang
      * @description 用户登录
-     * @date 2023-12-09 22:08
      **/
     @Override
     @Transactional
@@ -157,9 +151,7 @@ public class UserServiceImpl implements UserService {
     /**
      * @param id
      * @return com.gobanggame.pojo.vo.UserSelectByIdVO
-     * @author AlbertZhang
      * @description 根据id查询用户信息
-     * @date 2023-12-09 23:15
      **/
     @Override
     public UserSelectByIdVO getById(Long id) {
@@ -169,9 +161,7 @@ public class UserServiceImpl implements UserService {
     /**
      * @param userUpdateDTO
      * @return void
-     * @author AlbertZhang
      * @description 更新用户信息
-     * @date 2023-12-09 23:22
      **/
     @Override
     @Transactional
@@ -204,9 +194,7 @@ public class UserServiceImpl implements UserService {
     }
 
     /**
-     * @author AlbertZhang
      * @description 根据id删除用户（逻辑删除）
-     * @date 2023-12-25 15:39
      * @param id
      * @return void
      **/

@@ -9,8 +9,6 @@ import java.lang.annotation.Target;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 21:46
  * @description: 自定义注解，公共字段自动填充
  **/
 

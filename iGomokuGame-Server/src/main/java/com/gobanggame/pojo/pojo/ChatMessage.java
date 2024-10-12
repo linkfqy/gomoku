@@ -6,8 +6,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-10 20:20
  * @description: 聊天数据传输实体对象
  **/
 @Data

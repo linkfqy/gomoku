@@ -11,8 +11,6 @@ import java.time.LocalDateTime;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-10 21:46
  * @description: user_friends表实体类
  **/
 @Data

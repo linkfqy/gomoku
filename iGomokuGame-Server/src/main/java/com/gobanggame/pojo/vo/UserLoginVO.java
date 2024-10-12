@@ -10,8 +10,6 @@ import java.util.List;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 22:02
  * @description: 用户登录完成后返回的VO
  **/
 @Data

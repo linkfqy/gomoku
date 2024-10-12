@@ -6,8 +6,6 @@ import java.time.LocalDate;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-20 11:08
  * @description: 网站后台棋局信息模块的VO
  **/
 @Data

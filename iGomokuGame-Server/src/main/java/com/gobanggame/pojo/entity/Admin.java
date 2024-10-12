@@ -9,8 +9,6 @@ import java.time.LocalDateTime;
 
 /**
  * @program: ExampleProgram
- * @author: ExampleAuthor
- * @create: 2023-12-17
  * @description: Admin表实体类
  **/
 @Data

@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-14 16:18
  * @description: 在新加入房间的时候广播消息变化的VO
  **/
 @Data

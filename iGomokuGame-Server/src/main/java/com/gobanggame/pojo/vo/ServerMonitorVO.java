@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-23 17:34
  * @description: 服务器性能监控VO类
  **/
 @Data

@@ -7,8 +7,6 @@ import java.time.LocalDateTime;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 23:02
  * @description: 用户回显数据实体类
  **/
 @Data

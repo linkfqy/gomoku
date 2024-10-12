@@ -10,8 +10,6 @@ import java.time.LocalDateTime;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-11
  * @description: 用户好友聊天记录值对象
  **/
 @Data

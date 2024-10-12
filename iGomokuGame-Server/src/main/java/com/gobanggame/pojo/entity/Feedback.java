@@ -13,8 +13,6 @@ import java.util.Date;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-17
  * @description: Feedback表实体类
  **/
 @Data

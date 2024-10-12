@@ -31,8 +31,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-19 22:52
  * @description:用于后台数据分析的控制器
  **/
 @RestController
@@ -60,9 +58,7 @@ public class AnalysisController {
     /**
      * @param request
      * @return com.gobanggame.pojo.pojo.Result<java.lang.Object>
-     * @author AlbertZhang
      * @description 添加网站访客详细
-     * @date 2023-12-19 23:38
      **/
     @PostMapping("/add/website/click")
     @Operation(summary = "获取点击网站的访客信息")
@@ -89,9 +85,7 @@ public class AnalysisController {
     /**
      * @param
      * @return com.gobanggame.pojo.pojo.Result<java.util.Map < java.lang.String, java.util.Map < java.time.LocalDate, java.lang.Integer>>>
-     * @author AlbertZhang
      * @description 获取网站五子棋棋局的信息（每天）
-     * @date 2023-12-20 11:07
      **/
     @GetMapping("/analysis/game/counts")
     @Operation(summary = "获取网站五子棋棋局的相关信息（每天）")
@@ -102,9 +96,7 @@ public class AnalysisController {
     }
 
     /**
-     * @author AlbertZhang
      * @description 获取网站的点击量、访客数、新增用户数相关信息（每天）—可以跟前面那个获取棋局信息合成一个接口
-     * @date 2023-12-25 14:35
      * @param
      * @return com.gobanggame.pojo.pojo.Result<java.util.List<com.gobanggame.pojo.vo.WebsiteInfoGame>>
      **/
@@ -117,9 +109,7 @@ public class AnalysisController {
     }
 
     /**
-     * @author AlbertZhang
      * @description 获取网站访客信息地域数信息
-     * @date 2023-12-25 14:36
      * @param
      * @return com.gobanggame.pojo.pojo.Result<java.util.List<com.gobanggame.pojo.vo.MapData>>
      **/
@@ -134,9 +124,7 @@ public class AnalysisController {
     /**
      * @param
      * @return com.gobanggame.pojo.pojo.Result<java.util.List < com.gobanggame.pojo.entity.WebsiteVisitorDetailsInfo>>
-     * @author AlbertZhang
      * @description 获取网站点击访客详细信息——每次获取20条
-     * @date 2023-12-21 16:13
      **/
     @GetMapping("/analysis/visitor/details")
     @Operation(summary = "获取网站访客详细信息")
@@ -149,9 +137,7 @@ public class AnalysisController {
     }
 
     /**
-     * @author AlbertZhang
      * @description 获取一些网站指标——网站在线用户数、网站目前棋局数、网站因超时被关闭的棋局数
-     * @date 2023-12-25 14:37
      * @param
      * @return com.gobanggame.pojo.pojo.Result<com.gobanggame.pojo.vo.ServerMonitorVO>
      **/

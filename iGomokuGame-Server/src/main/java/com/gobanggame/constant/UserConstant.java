@@ -2,8 +2,6 @@ package com.gobanggame.constant;
 
 /**
  * @program: gobang
- * @author: AlbertZhang
- * @create: 2023-12-09 17:41
  * @description: 用户提示信息实体类—用户模块的异常信息
  **/
 public class UserConstant {

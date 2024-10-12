@@ -24,8 +24,6 @@ import java.util.UUID;
 
 /**
  * @program: gobang
- * @author: AlbertZhang
- * @create: 2023-12-09 17:54
  * @description: 用户控制器
  **/
 @RestController
@@ -45,9 +43,7 @@ public class UserController {
     /**
      * @param userRegisterDTO
      * @return com.gobanggame.pojo.pojo.Result<java.lang.Object>
-     * @author AlbertZhang
      * @description 用户注册
-     * @date 2023-12-09 21:23
      **/
     @PostMapping("/register")
     @Operation(summary = "用户注册")
@@ -60,9 +56,7 @@ public class UserController {
     /**
      * @param userLoginDTO
      * @return com.gobanggame.pojo.pojo.Result<com.gobanggame.pojo.vo.UserLoginVO>
-     * @author AlbertZhang
      * @description 用户登录
-     * @date 2023-12-09 22:06
      **/
     @PostMapping("/login")
     @Operation(summary = "用户登录")
@@ -75,9 +69,7 @@ public class UserController {
     /**
      * @param id
      * @return com.gobanggame.pojo.pojo.Result<com.gobanggame.pojo.vo.UserSelectByIdVO>
-     * @author AlbertZhang
      * @description 根据id查询用户信息
-     * @date 2023-12-09 23:14
      **/
     @GetMapping("/{id}")    // 这个设计问题，不需要传id，jwt中可以获取id
     @Operation(summary = "根据id查询")
@@ -112,9 +104,7 @@ public class UserController {
     /**
      * @param userUpdateDTO
      * @return com.gobanggame.pojo.pojo.Result<java.lang.Object>
-     * @author AlbertZhang
      * @description 更新用户信息
-     * @date 2023-12-09 23:22
      **/
     @PutMapping
     @Operation(summary = "用户更新信息")
@@ -127,9 +117,7 @@ public class UserController {
     /**
      * @param id
      * @return com.gobanggame.pojo.pojo.Result<java.lang.Object>
-     * @author AlbertZhang
      * @description 根据id删除用户信息
-     * @date 2023-12-09 23:40
      **/
     @DeleteMapping("/{id}") // 这里是设计问题，不需要传id，jwt里面可以获取id
     @Operation(summary = "用户注销")

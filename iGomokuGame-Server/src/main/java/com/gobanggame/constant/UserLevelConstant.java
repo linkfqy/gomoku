@@ -4,8 +4,6 @@ import java.util.HashMap;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-13 21:45
  * @description: 用户等级常量类
  **/
 public class UserLevelConstant {

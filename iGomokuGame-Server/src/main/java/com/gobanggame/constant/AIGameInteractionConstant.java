@@ -2,8 +2,6 @@ package com.gobanggame.constant;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-12 15:10
  * @description: AI互动类—定义前端下棋时的一些AI互动消息
  **/
 public class AIGameInteractionConstant {

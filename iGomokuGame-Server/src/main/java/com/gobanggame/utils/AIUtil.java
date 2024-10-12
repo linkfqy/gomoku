@@ -8,8 +8,6 @@ import lombok.extern.slf4j.Slf4j;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-12 15:38
  * @description: AI走法工具类
  **/
 @Slf4j
@@ -90,9 +88,7 @@ public class AIUtil {
     /**
      * @param boardStates
      * @return boolean
-     * @author AlbertZhang
      * @description 判断当前是不是平局
-     * @date 2023-12-25 15:41
      **/
     private static boolean isDeadHeat(Byte[][] boardStates) {
 

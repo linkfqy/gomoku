@@ -16,8 +16,6 @@ import java.time.LocalDateTime;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 21:48
  * @description: 公共字段自动填充切面类
  **/
 @Aspect

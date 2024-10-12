@@ -5,8 +5,6 @@ import lombok.Data;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 21:20
  * @description: 注册时使用的DTO
  **/
 @Data

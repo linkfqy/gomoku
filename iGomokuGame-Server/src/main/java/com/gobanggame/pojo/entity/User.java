@@ -11,8 +11,6 @@ import java.util.Date;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-09 21:34
  * @description: User表实体类
  **/
 @Data

@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-12 14:54
  * @description: 五子棋人机对战的数据传输DTO
  **/
 @Data

@@ -8,8 +8,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-12 14:48
  * @description: 人机对战中返回数据的格式
  **/
 

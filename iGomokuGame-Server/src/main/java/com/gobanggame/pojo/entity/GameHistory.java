@@ -10,8 +10,6 @@ import java.time.LocalDateTime;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-12 14:26
  * @description: GameHistory表实体类
  **/
 @Data

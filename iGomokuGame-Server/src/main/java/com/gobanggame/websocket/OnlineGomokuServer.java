@@ -37,8 +37,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-14 12:19
  * @description: 在线五子棋Server，是用于处理房间对战的websocket连接
  **/
 @ServerEndpoint(value = "/game/online/gomoku/{roomId}/{userId}", configurator = CustomSpringConfigurator.class)
@@ -80,9 +78,7 @@ public class OnlineGomokuServer {
      * @param session
      * @param roomId
      * @return void
-     * @author AlbertZhang
      * @description 连接建立时需要做的事情，根据当前房间的人数，分三种情况处理
-     * @date 2023-12-14 16:04
      **/
     @OnOpen
     public void onOpen(Session session, @PathParam("roomId") Long roomId, @PathParam("userId") Long userId) {
@@ -145,9 +141,7 @@ public class OnlineGomokuServer {
      * @param roomId
      * @param message
      * @return void
-     * @author AlbertZhang
      * @description 针对前端发送消息的不同类型进行处理，一共有1-5种类型
-     * @date 2023-12-14 16:05
      **/
     @OnMessage
     public void onMessage(Session session, @PathParam("roomId") Long roomId, @PathParam("userId") Long userId, String message) throws JsonProcessingException {
@@ -320,9 +314,7 @@ public class OnlineGomokuServer {
      * @param session
      * @param roomId
      * @return void
-     * @author AlbertZhang
      * @description 前端主动断开连接的逻辑处理，分两种情况，一个是观战者断开，一个是对战者断开
-     * @date 2023-12-14 17:36
      **/
     @OnClose
     public void onClose(Session session, @PathParam("roomId") Long roomId, @PathParam("userId") Long userId) throws IOException {
@@ -349,9 +341,7 @@ public class OnlineGomokuServer {
     }
 
     /**
-     * @author AlbertZhang
      * @description 发生了错误，打印一下日志即可
-     * @date 2023-12-25 21:00
      * @param roomId 房间号
      * @param userId 发生错误的用户id
      * @param throwable 错误详细信息对象
@@ -367,9 +357,7 @@ public class OnlineGomokuServer {
 
     /**
      * @return void
-     * @author AlbertZhang
      * @description 这个方法用于广播房间人数的变化，当有新用户加入进来时，会调用这个方法广播房间人数的所有相关信息
-     * @date 2023-12-14 16:13
      **/
     private void sendToAllUserForRoomCount(Long roomId) {
         // 获取当前房间的所有session
@@ -476,9 +464,7 @@ public class OnlineGomokuServer {
 
 
     /**
-     * @author AlbertZhang
      * @description 给所有用户广播数据——下棋广播，聊天广播
-     * @date 2023-12-25 21:01
      * @param type 数据传输类型，约定了7种类型
      * @param roomId 房间id
      * @param message 传输消息内容

@@ -10,8 +10,8 @@
 //
 // /**
 //  * @program: gobanggame
-//  * @author: AlbertZhang
-//  * @create: 2023-12-12 20:22
+//
+//
 //  * @description: 测试AI下棋
 //  **/
 // public class AIGameBoardTest {

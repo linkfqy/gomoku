@@ -2,8 +2,6 @@ package com.gobanggame.constant;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-13 21:58
  * @description: 用户胜利后加多少分的常量类
  **/
 public class UserGameSuccessConstant {

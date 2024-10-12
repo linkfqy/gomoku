@@ -5,8 +5,6 @@ import org.junit.jupiter.api.Test;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-19 21:43
  * @description:
  **/
 public class BoardTest {

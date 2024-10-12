@@ -13,8 +13,6 @@ import java.time.LocalDateTime;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-19 23:35
  * @description:
  **/
 @Service
@@ -30,9 +28,7 @@ public class AnalysisServiceImpl implements AnalysisService {
      * @param ipAddr
      * @param cityInfoByFile
      * @return void
-     * @author AlbertZhang
      * @description 添加网站访客
-     * @date 2023-12-19 23:39
      **/
     @Override
     public void WebsiteClick(String ipAddr, String cityInfoByFile) {

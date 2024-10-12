@@ -8,8 +8,6 @@ import java.util.List;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-11 15:54
  * @description: 获取未读消息的实体类
  **/
 @Data

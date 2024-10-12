@@ -18,8 +18,6 @@ import java.util.concurrent.atomic.AtomicLong;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-23 12:25
  * @description: websocketTask管理的定时任务类
  **/
 @Component
@@ -41,9 +39,7 @@ public class WebsocketSessionTask {
     /**
      * @param
      * @return void
-     * @author AlbertZhang
      * @description 移除超过一个小时的room
-     * @date 2023-12-23 12:30
      **/
     @Scheduled(cron = "0 0 * * * ?")  // 每小时执行一次
     // @Scheduled(fixedRate = 10000)  // 每10秒执行一次

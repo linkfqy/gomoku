@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * @program: gobanggame
- * @author: AlbertZhang
- * @create: 2023-12-14 14:14
  * @description: 在线五子棋前端发送消息接收类
  **/
 @Data
