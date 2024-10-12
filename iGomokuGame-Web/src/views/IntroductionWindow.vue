@@ -16,7 +16,7 @@ onBeforeMount(() => {
 const loginDialogVisible = ref(false)
 const userIderStore = useUserIderStore()
 const showingFrienderStore = useShowingFrienderStore()
-const status = ref(true) // true 为Sign in，false 为Sign up
+const status = ref(true) // true 为登录，false 为注册
 const usernameInp = ref(null)
 const passwordInp = ref(null)
 const form = ref({
@@ -30,24 +30,24 @@ const openDialog = () => {
 }
 const onSubmit = async () => {
   if (form.value.username == '') {
-    ElMessage.error('User Name不能为空')
+    ElMessage.error('用户名不能为空')
     return
   }
   if (form.value.password == '') {
-    ElMessage.error('Password不能为空')
+    ElMessage.error('密码不能为空')
     return
   }
   // console.log(form.value)
 
   if (!status.value) {
-    // 请求Sign up
+    // 请求注册
     await register(form.value)
-    // Sign up成功
+    // 注册成功
   }
-  // 请求Sign in
+  // 请求登录
   var res = await login(form.value)
-  // Sign in成功
-  ElMessage.success('Sign in成功')
+  // 登录成功
+  ElMessage.success('登录成功')
   loginDialogVisible.value = false // 关闭弹窗
   // 存储用户信息
   userIderStore.setLoginForm(form.value)
@@ -82,37 +82,36 @@ const pressPassword = (event) => {
 
     <div style="font-size: 30px; text-align: center; padding-top: 1%">
       <p>Distributed Gomoku</p>
+    </div>
 
-  </div>
-
-    <!-- Sign in/个人信息按钮 -->
+    <!-- 登录/个人信息按钮 -->
     <el-menu-item>
-      <!-- Sign in按钮 -->
+      <!-- 登录按钮 -->
       <span>
         <el-button style="margin-bottom: 15px" size="large" link @click="openDialog">
-          Sign in
+          登录
         </el-button>
-        <!-- Sign in对话框 -->
+        <!-- 登录对话框 -->
         <el-dialog v-model="loginDialogVisible" width="30%">
           <div style="max-width: 600px">
-            <h1 style="text-align: center">{{ status ? 'Sign in' : 'Sign up' }}</h1>
+            <h1 style="text-align: center">{{ status ? '登录' : '注册' }}</h1>
             <el-form :model="form" label-width="120px">
-              <el-form-item label="User Name">
+              <el-form-item label="用户名">
                 <el-input
                   ref="usernameInp"
                   @keydown="pressUsername"
                   v-model="form.username"
-                  :placeholder="status ? 'Please enterUser Name' : '设置新User Name'"
+                  :placeholder="status ? '请输入用户名' : '设置新用户名'"
                 />
               </el-form-item>
 
-              <el-form-item label="Password">
+              <el-form-item label="密码">
                 <el-input
                   ref="passwordInp"
                   @keydown="pressPassword"
                   v-model="form.password"
                   type="password"
-                  :placeholder="status ? 'Please enterPassword' : '设置新Password'"
+                  :placeholder="status ? '请输入密码' : '设置新密码'"
                   show-password
                 />
               </el-form-item>
@@ -123,15 +122,15 @@ const pressPassword = (event) => {
                   type="primary"
                   @click="status = !status"
                 >
-                  {{ status ? 'Sign up' : 'Sign in' }}
+                  {{ status ? '注册' : '登录' }}
                 </el-button>
               </div>
 
               <el-form-item>
                 <el-button type="primary" @click="onSubmit">{{
-                  status ? 'Sign in' : 'Sign up'
+                  status ? '登录' : '注册'
                 }}</el-button>
-                <el-button @click="loginDialogVisible = false">Cancel</el-button>
+                <el-button @click="loginDialogVisible = false">取消</el-button>
               </el-form-item>
             </el-form>
           </div>
@@ -142,7 +141,7 @@ const pressPassword = (event) => {
 
   <div class="introduction">
     <div style="font-size: 80px; text-align: center; padding-top: 20%">
-      <p> </p>
+      <p></p>
     </div>
   </div>
 </template>
