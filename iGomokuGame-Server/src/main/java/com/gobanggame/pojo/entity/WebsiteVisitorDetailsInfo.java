@@ -31,6 +31,6 @@ public class WebsiteVisitorDetailsInfo {
     @Schema(description = "访客地址", example = "未知地址")
     private String address;
 
-    @Schema(description = "网站访问时间", example = "2023-12-17T10:15:00")
+    @Schema(description = "网站访问时间", example = "2024-10-01T10:15:00")
     private LocalDateTime accessTime;
 }

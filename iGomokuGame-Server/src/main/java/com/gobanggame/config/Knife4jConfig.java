@@ -20,7 +20,7 @@ public class Knife4jConfig {
                         .version("1.0")
                         .description("五子棋项目接口文档")
                         .termsOfService("https://test.com")
-                        .contact(new Contact().name("AlbertZhang").url("https://test.com").email("han892577@qq.com"))
+                        .contact(new Contact().name("linkfqy").url("https://test.com").email("linkfqy@qq.com"))
                 );
     }
 

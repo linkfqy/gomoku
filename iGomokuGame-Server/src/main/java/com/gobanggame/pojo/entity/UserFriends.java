@@ -32,10 +32,10 @@ public class UserFriends {
     @Schema(description = "逻辑删除字段", example = "1")
     private Integer deleted = 0;
 
-    @Schema(description = "创建时间", example = "2023-03-15 12:00:00")
+    @Schema(description = "创建时间", example = "2024-10-01 10:15:00")
     private LocalDateTime createTime;
 
-    @Schema(description = "删除时间", example = "2023-03-15 12:00:00")
+    @Schema(description = "删除时间", example = "2024-10-01 10:15:00")
     private LocalDateTime deletedTime;
 
 

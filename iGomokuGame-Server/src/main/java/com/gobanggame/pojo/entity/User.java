@@ -73,13 +73,13 @@ public class User {
     @Schema(description = "在线状态", example = "在线")
     private String online;
 
-    @Schema(description = "最后一次在线时间", example = "2023-03-15 12:00:00")
+    @Schema(description = "最后一次在线时间", example = "2024-10-01 10:15:00")
     private LocalDateTime lastOnlineTime;
 
-    @Schema(description = "创建时间", example = "2023-03-15 12:00:00")
+    @Schema(description = "创建时间", example = "2024-10-01 10:15:00")
     private LocalDateTime createTime;
 
-    @Schema(description = "更新时间", example = "2023-03-15 12:00:00")
+    @Schema(description = "更新时间", example = "2024-10-01 10:15:00")
     private LocalDateTime updateTime;
 
     @Schema(description = "是否被删除（逻辑删除）", example = "0")

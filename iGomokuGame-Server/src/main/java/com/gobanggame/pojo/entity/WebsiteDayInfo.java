@@ -38,6 +38,6 @@ public class WebsiteDayInfo {
     @Schema(description = "网站所开人类棋局数", example = "20")
     private Integer humanGameCount;
 
-    @Schema(description = "记录日期", example = "2023-12-17")
+    @Schema(description = "记录日期", example = "2024-10-01")
     private LocalDate recordDate;
 }

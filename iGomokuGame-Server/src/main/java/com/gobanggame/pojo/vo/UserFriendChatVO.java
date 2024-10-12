@@ -36,6 +36,6 @@ public class UserFriendChatVO {
     @Schema(description = "消息内容", example = "你好")
     private String message;
 
-    @Schema(description = "消息发送时间", example = "2023-12-11 12:37:40")
+    @Schema(description = "消息发送时间", example = "2024-10-01 12:37:40")
     private LocalDateTime messageTime;
 }

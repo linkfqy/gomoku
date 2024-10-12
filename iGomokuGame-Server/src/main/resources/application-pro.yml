@@ -8,7 +8,7 @@ gobanggame:
     database: gomoku_online #服务器名称
     username: root
     password: handsomeBoy # 配置自己服务器数据库或本地数据库的密码
-  # 阿里云oss相关配置 albertzhang123456
+  # 阿里云oss相关配置 
   alioss:
     endpoint: handsomeBoy   # 这里填写阿里云OSS地域
     access-key-id: handsomeBoy  #这里去官网拿key

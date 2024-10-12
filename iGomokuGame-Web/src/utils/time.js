@@ -10,7 +10,6 @@ const oneHourMilliseconds = 3600000 // 60分钟
 const oneMinuteMilliseconds = 60000 // 1分钟
 
 export const timeToText = (time) => {
-    // time: '2023-12-18T20:00:23'
     // console.log(time);
     var temp = time.split('T')
     var tempLeft = temp[0].split('-'), tempRight = temp[1].split(':')

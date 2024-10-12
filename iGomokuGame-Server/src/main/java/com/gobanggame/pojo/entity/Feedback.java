@@ -31,11 +31,11 @@ public class Feedback {
     @Schema(description = "反馈信息", example = "This is a feedback content example.")
     private String feedbackContent;
 
-    @Schema(description = "反馈时间", example = "2023-12-17T14:33:00")
+    @Schema(description = "反馈时间", example = "2024-10-01T10:15:00")
     private LocalDateTime feedbackTime;
     @Schema(description = "是否解决", example = "false")
     private Boolean fixed;
 
-    @Schema(description = "问题解决时间", example = "2023-12-18T15:00:00")
+    @Schema(description = "问题解决时间", example = "2024-10-01T10:15:00")
     private LocalDateTime fixedTime;
 }

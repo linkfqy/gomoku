@@ -31,10 +31,10 @@ public class GameHistory {
     @Schema(description = "白棋用户id（0代表是AI对战）", example = "3003")
     private Long whiteId;
 
-    @Schema(description = "游戏开始时间", example = "2023-12-10 14:00:00")
+    @Schema(description = "游戏开始时间", example = "2024-10-01 10:15:00")
     private LocalDateTime beginTime;
 
-    @Schema(description = "游戏结束时间", example = "2023-12-10 15:00:00")
+    @Schema(description = "游戏结束时间", example = "2024-10-01 10:15:00")
     private LocalDateTime endTime;
 
     @Schema(description = "游戏结果（0黑胜，1白胜，2平）", example = "0")

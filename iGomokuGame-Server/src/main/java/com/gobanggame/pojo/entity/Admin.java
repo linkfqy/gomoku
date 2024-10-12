@@ -39,6 +39,6 @@ public class Admin {
     @Schema(description = "当前员工账号状态", example = "true")
     private Boolean status;
 
-    @Schema(description = "账号创建时间", example = "2023-12-17T14:33:00")
+    @Schema(description = "账号创建时间", example = "2024-10-01T14:33:00")
     private LocalDateTime createTime;
 }

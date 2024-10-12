@@ -22,7 +22,7 @@ export const reverseFormatDateTime = (customFormattedString) => {
     // 格式不正确，可以抛出错误或返回原始字符串
     throw new Error('Invalid date time format')
   }
-  const datePart = parts[0] // 日期部分（"2023-12-19"）
+  const datePart = parts[0] // 日期部分（"2024-10-01"）
   const timePart = parts[1] // 时间部分（"12:41:43"）
   return `${datePart}T${timePart}`
 }
