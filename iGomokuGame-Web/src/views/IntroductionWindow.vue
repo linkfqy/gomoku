@@ -53,10 +53,10 @@ const onSubmit = async () => {
   userIderStore.setLoginForm(form.value)
   userIderStore.setUserInfo(res.data)
   // 创建聊天的连接
-  userIderStore.getChatSocket()
-  res = await getUnreadMessageObj()
-  showingFrienderStore.setUnreadMessageObj(res.data)
-  console.log('unreadMessageObj', showingFrienderStore.unreadMessageObj)
+  // userIderStore.getChatSocket()
+  // res = await getUnreadMessageObj()
+  // showingFrienderStore.setUnreadMessageObj(res.data)
+  // console.log('unreadMessageObj', showingFrienderStore.unreadMessageObj)
   router.push('/main')
 }
 
